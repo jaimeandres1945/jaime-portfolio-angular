@@ -1,40 +1,175 @@
-# Jaime Portfolio Angular
+![Angular](https://img.shields.io/badge/Angular-17-red)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
 
-Starter kit de landing page + backoffice para `jaimequiceno.es`.
+# Jaime Quiceno — Software Architect Portfolio
 
-## Qué resuelve
+Personal portfolio website built with **Angular** to present my experience as a **Software Architect, DevOps Engineer and Full-Stack Developer**.
 
-- Landing profesional enfocada a contratación fija como Arquitecto de Software.
-- Soporte multidioma en runtime (`es`, `en`) sin recompilar por idioma.
-- Área `/admin` para activar o desactivar secciones públicas, skills, experiencia y proyectos.
-- Datos seed basados en tu CV y preparados para evolucionar a CMS real.
+This project showcases my professional experience, technical skills, certifications, and selected projects.
 
-## Stack
+Live site
+👉 https://jaimequiceno.es
 
-- Angular standalone + router lazy loaded
-- Signals para estado local
-- CMS demo con `localStorage`
-- Estructura preparada para sustituir auth y persistencia por Firebase/Auth0/Supabase
+---
 
-## Arranque
+## About
 
-```bash
-npm install
-npm start
+I am a **Software Architect with more than 12 years of experience** designing scalable software systems, cloud architectures, and DevOps platforms.
+
+I have worked with international teams in companies such as:
+
+* Knowmad Mood
+* Conversia
+* Capitole Consulting
+* Vueling Airlines
+* Indra Software
+
+My expertise focuses on:
+
+* .NET architecture
+* Angular applications
+* Cloud platforms (Azure / AWS)
+* DevOps and CI/CD pipelines
+* Microservices and distributed systems
+
+---
+
+## Tech Stack
+
+Frontend
+Angular
+TypeScript
+HTML5 / CSS3
+
+Architecture
+Clean Architecture
+Domain Driven Design
+SOLID principles
+CQRS / MediatR
+
+Cloud & DevOps
+Azure
+AWS
+Docker
+CI/CD pipelines
+
+Other Tools
+Git
+SonarQube
+Checkmarx
+Terraform
+Ansible
+
+---
+
+## Features
+
+This portfolio includes:
+
+* Professional **hero landing**
+* **Experience timeline**
+* **Skills visualization**
+* **Education & certifications**
+* **Project portfolio**
+* **Admin area** to manage portfolio content
+* Multi-language support (EN / ES)
+
+---
+
+## Project Structure
+
+```
+src
+ ├── app
+ │   ├── core
+ │   ├── features
+ │   ├── shared
+ │   └── layouts
+ ├── assets
+ └── environments
 ```
 
-## Roadmap recomendado
+The application follows a modular structure designed for maintainability and scalability.
 
-1. Reemplazar `AuthService` por Firebase Authentication.
-2. Sustituir `PortfolioCmsService` por Firestore o API .NET.
-3. Añadir SEO dinámico, Open Graph y analytics.
-4. Cargar una foto profesional real en `src/assets/images/`.
-5. Incorporar más idiomas extendiendo `Locale` y los ficheros `src/assets/i18n`.
+---
 
-## Despliegue
+## Local Development
 
-Para una landing pública en tu dominio, lo más práctico es:
+Clone the repository
 
-- Frontend Angular estático en Firebase Hosting, Netlify o Azure Static Web Apps.
-- Auth + datos en Firebase si quieres ir rápido.
-- Alternativa enterprise: API .NET + Azure App Service + Azure SQL/Cosmos.
+```
+git clone https://github.com/jaimeandres1945/jaime-portfolio-angular.git
+```
+
+Install dependencies
+
+```
+npm install
+```
+
+Run development server
+
+```
+ng serve
+```
+
+Open the application
+
+```
+http://localhost:4200
+```
+
+---
+
+## Production Build
+
+To build the project for production:
+
+```
+npm run build
+```
+
+The compiled files will be generated in:
+
+```
+dist/
+```
+
+---
+
+## Deployment
+
+The website is deployed using modern static hosting with CDN acceleration.
+
+Typical deployment workflow:
+
+```
+GitHub
+   ↓
+Cloudflare Pages
+   ↓
+jaimequiceno.es
+```
+
+Every push to the main branch triggers an automatic deployment.
+
+---
+
+## Author
+
+**Jaime Andrés Quiceno González**
+
+Software Architect / DevOps Engineer / Full-Stack Developer
+
+LinkedIn
+https://www.linkedin.com/in/jaqg-dev
+
+Website
+https://jaimequiceno.es
+
+---
+
+## License
+
+This project is open source and available under the MIT License.
