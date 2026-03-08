@@ -6,16 +6,16 @@
 
 Personal portfolio website built with **Angular** to present my experience as a **Software Architect, DevOps Engineer and Full-Stack Developer**.
 
-This project showcases my professional experience, technical skills, certifications, and selected projects.
+This project showcases my professional experience, technical skills, certifications and selected projects.
 
-Live site
-👉 https://jaimequiceno.es
+🌐 Live site
+https://jaimequiceno.es
 
 ---
 
 ## About
 
-I am a **Software Architect with more than 12 years of experience** designing scalable software systems, cloud architectures, and DevOps platforms.
+I am a **Software Architect with more than 12 years of experience** designing scalable software systems, cloud architectures and DevOps platforms.
 
 I have worked with international teams in companies such as:
 
@@ -37,29 +37,35 @@ My expertise focuses on:
 
 ## Tech Stack
 
-Frontend
-Angular
-TypeScript
-HTML5 / CSS3
+### Frontend
 
-Architecture
-Clean Architecture
-Domain Driven Design
-SOLID principles
-CQRS / MediatR
+* Angular
+* TypeScript
+* HTML5
+* CSS3
 
-Cloud & DevOps
-Azure
-AWS
-Docker
-CI/CD pipelines
+### Backend & Architecture
 
-Other Tools
-Git
-SonarQube
-Checkmarx
-Terraform
-Ansible
+* .NET / ASP.NET Core
+* Clean Architecture
+* Domain Driven Design
+* SOLID Principles
+* CQRS / MediatR
+
+### Cloud & DevOps
+
+* Microsoft Azure
+* Amazon Web Services
+* Docker
+* CI/CD Pipelines
+
+### Tools
+
+* Git
+* SonarQube
+* Checkmarx
+* Terraform
+* Ansible
 
 ---
 
@@ -67,13 +73,13 @@ Ansible
 
 This portfolio includes:
 
-* Professional **hero landing**
-* **Experience timeline**
-* **Skills visualization**
-* **Education & certifications**
-* **Project portfolio**
-* **Admin area** to manage portfolio content
-* Multi-language support (EN / ES)
+* Professional **Hero Landing Section**
+* **Experience Timeline**
+* **Skills Visualization**
+* **Education & Certifications**
+* **Project Portfolio**
+* **Admin Area** to manage portfolio content
+* **Multi-language support** (EN / ES)
 
 ---
 
@@ -90,7 +96,11 @@ src
  └── environments
 ```
 
-The application follows a modular structure designed for maintainability and scalability.
+The application follows a modular architecture designed for:
+
+* maintainability
+* scalability
+* separation of concerns
 
 ---
 
@@ -149,10 +159,12 @@ GitHub
    ↓
 Cloudflare Pages
    ↓
+Global CDN
+   ↓
 jaimequiceno.es
 ```
 
-Every push to the main branch triggers an automatic deployment.
+Every push to the **main branch** triggers an automatic deployment.
 
 ---
 
@@ -160,7 +172,7 @@ Every push to the main branch triggers an automatic deployment.
 
 **Jaime Andrés Quiceno González**
 
-Software Architect / DevOps Engineer / Full-Stack Developer
+Software Architect • DevOps Engineer • Full-Stack Developer
 
 LinkedIn
 https://www.linkedin.com/in/jaqg-dev
@@ -172,4 +184,4 @@ https://jaimequiceno.es
 
 ## License
 
-This project is open source and available under the MIT License.
+This project is open source and available under the **MIT License**.
