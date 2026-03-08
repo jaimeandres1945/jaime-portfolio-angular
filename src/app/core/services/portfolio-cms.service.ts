@@ -22,7 +22,9 @@ const seedData: PortfolioData = {
     email: 'contacto@jaimequiceno.es',
     phone: '+34 656 829 726',
     photoUrl: 'assets/profile/jaime-quiceno-software-architect.png',
-    yearsOfExperience: 15
+    yearsOfExperience: 15,
+    pdfPath: 'assets/cv/Jaime-Quiceno-Software-Architect.pdf',
+    namePdf: "Jaime-Quiceno-Software-Architect.pdf"
   },
   sectionVisibility: {
     hero: true,

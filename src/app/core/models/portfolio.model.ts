@@ -12,6 +12,8 @@ export interface Profile {
   phone: string;
   photoUrl: string;
   yearsOfExperience: number;
+  pdfPath: string;
+  namePdf: string;
 }
 
 export interface Skill {

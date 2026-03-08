@@ -9,6 +9,7 @@
     <div class="hero__actions">
       <a class="button primary" [href]="'mailto:' + data().profile.email">{{ t('hero.cta.contact') }}</a>
       <a class="button" [href]="data().profile.linkedinUrl" target="_blank" rel="noreferrer">{{ t('hero.cta.linkedin') }}</a>
+      <a class="button download" [href]="data().profile.pdfPath" target="_blank" [download]="data().profile.namePdf">📄{{ t('hero.cta.download-cv') }}</a>
     </div>
   </div>
 
