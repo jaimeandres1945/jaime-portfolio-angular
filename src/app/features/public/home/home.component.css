@@ -1,0 +1,149 @@
+:host {
+  display: block;
+  padding: 2rem 1.5rem 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1.4fr 0.8fr;
+  gap: 2rem;
+  align-items: center;
+  background: linear-gradient(135deg, rgba(232, 241, 255, 0.95), rgba(255, 255, 255, 0.94));
+  border-color: var(--border-strong);
+}
+
+.hero__photo img {
+  width: 100%;
+  border-radius: 24px;
+  object-fit: cover;
+  object-position: left center;
+  aspect-ratio: 4 / 5;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-soft);
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--primary-hover);
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 4rem);
+  margin-bottom: 0.5rem;
+  color: var(--text);
+}
+
+h2 {
+  font-size: clamp(1.2rem, 3vw, 1.8rem);
+  color: var(--text-muted);
+}
+
+h3,
+h4 {
+  color: var(--text);
+}
+
+.lead,
+.summary {
+  max-width: 60ch;
+  color: var(--text-muted);
+}
+
+.hero__actions,
+.tags {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.section {
+  margin-top: 2rem;
+}
+
+.section__header {
+  margin-bottom: 1rem;
+}
+
+.section__header h3 {
+  font-size: 1.35rem;
+}
+
+.timeline,
+.skills-grid,
+.portfolio-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.skills-grid,
+.portfolio-grid {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.timeline__item,
+.skill-card,
+.project-card,
+.contact-card {
+  background: var(--surface-strong);
+}
+
+.timeline__meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.skill-card {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.skill-card span {
+  color: var(--text-muted);
+}
+
+.skill-meter {
+  height: 10px;
+  border-radius: 999px;
+  background: var(--surface-muted);
+  overflow: hidden;
+}
+
+.skill-meter__bar {
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, var(--primary), var(--accent));
+}
+
+.project-card p,
+.contact-card p {
+  margin-bottom: 0.8rem;
+  color: var(--text-muted);
+}
+
+.tags span {
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: #4d6d79;
+  font-size: 0.9rem;
+  border: 1px solid rgba(143, 211, 227, 0.35);
+}
+
+.footer {
+  padding-top: 2rem;
+  color: var(--text-muted);
+}
+
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+}

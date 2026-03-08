@@ -1,0 +1,91 @@
+<section class="dashboard">
+  <div class="dashboard__header">
+    <div>
+      <h1>{{ t('section.admin') }}</h1>
+      <p>{{ t('admin.publicPreview') }}: <a routerLink="/">/</a></p>
+    </div>
+    <button type="button" class="button" (click)="logout()">{{ t('admin.logout') }}</button>
+  </div>
+
+  <div class="dashboard__grid">
+    <article class="card panel">
+      <h2>{{ t('admin.profile') }}</h2>
+      <label>
+        <span>{{ t('admin.heroHeadline') }}</span>
+        <input #roleInput [ngModel]="currentRole()" (ngModelChange)="saveRole($event)" />
+      </label>
+      <label>
+        <span>{{ t('admin.heroSummary') }}</span>
+        <textarea rows="5" [ngModel]="currentSummary()" (ngModelChange)="saveSummary($event)"></textarea>
+      </label>
+    </article>
+
+    <article class="card panel">
+      <h2>{{ t('admin.visibility') }}</h2>
+      <div class="toggle-list">
+        <button type="button" (click)="cms.toggleSection('hero')">{{ t('admin.section.hero') }} · {{ data().sectionVisibility.hero ? t('common.visible') : t('common.hidden') }}</button>
+        <button type="button" (click)="cms.toggleSection('experience')">{{ t('admin.section.experience') }} · {{ data().sectionVisibility.experience ? t('common.visible') : t('common.hidden') }}</button>
+        <button type="button" (click)="cms.toggleSection('skills')">{{ t('admin.section.skills') }} · {{ data().sectionVisibility.skills ? t('common.visible') : t('common.hidden') }}</button>
+        <button type="button" (click)="cms.toggleSection('education')">{{ t('admin.section.education') }} · {{ data().sectionVisibility.education ? t('common.visible') : t('common.hidden') }}</button>
+        <button type="button" (click)="cms.toggleSection('certifications')">{{ t('admin.section.certifications') }} · {{ data().sectionVisibility.certifications ? t('common.visible') : t('common.hidden') }}</button>
+        <button type="button" (click)="cms.toggleSection('portfolio')">{{ t('admin.section.portfolio') }} · {{ data().sectionVisibility.portfolio ? t('common.visible') : t('common.hidden') }}</button>
+        <button type="button" (click)="cms.toggleSection('contact')">{{ t('admin.section.contact') }} · {{ data().sectionVisibility.contact ? t('common.visible') : t('common.hidden') }}</button>
+      </div>
+    </article>
+
+    <article class="card panel">
+      <h2>{{ t('admin.skills') }}</h2>
+      <div class="toggle-list compact">
+        @for (skill of data().skills; track skill.name) {
+          <button type="button" (click)="cms.toggleSkill(skill.name)">
+            {{ skill.name }} · {{ skill.visible ? t('common.visible') : t('common.hidden') }}
+          </button>
+        }
+      </div>
+    </article>
+
+    <article class="card panel">
+      <h2>{{ t('admin.experience') }}</h2>
+      <div class="toggle-list compact">
+        @for (item of data().experience; track item.id) {
+          <button type="button" (click)="cms.toggleExperience(item.id)">
+            {{ item.company }} · {{ item.visible ? t('common.visible') : t('common.hidden') }}
+          </button>
+        }
+      </div>
+    </article>
+
+    <article class="card panel">
+      <h2>{{ t('admin.education') }}</h2>
+      <div class="toggle-list compact">
+        @for (item of data().education; track item.id) {
+          <button type="button" (click)="cms.toggleEducation(item.id)">
+            {{ cms.textByLocale(item.title, locale()) }} · {{ item.visible ? t('common.visible') : t('common.hidden') }}
+          </button>
+        }
+      </div>
+    </article>
+
+    <article class="card panel">
+      <h2>{{ t('admin.certifications') }}</h2>
+      <div class="toggle-list compact">
+        @for (item of data().certifications; track item.id) {
+          <button type="button" (click)="cms.toggleCertification(item.id)">
+            {{ cms.textByLocale(item.title, locale()) }} · {{ item.visible ? t('common.visible') : t('common.hidden') }}
+          </button>
+        }
+      </div>
+    </article>
+
+    <article class="card panel panel--wide">
+      <h2>{{ t('admin.projects') }}</h2>
+      <div class="toggle-list compact">
+        @for (project of data().portfolioProjects; track project.id) {
+          <button type="button" (click)="cms.toggleProject(project.id)">
+            {{ cms.textByLocale(project.title, locale()) }} · {{ project.visible ? t('common.visible') : t('common.hidden') }}
+          </button>
+        }
+      </div>
+    </article>
+  </div>
+</section>

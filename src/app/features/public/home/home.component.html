@@ -1,0 +1,126 @@
+<section class="hero card" *ngIf="data().sectionVisibility.hero">
+  <div class="hero__copy">
+    <p class="eyebrow">{{ textByLocale(data().profile.location) }} · {{ data().profile.yearsOfExperience }} {{ t('common.years') }}</p>
+    <h1>{{ data().profile.name }}</h1>
+    <h2>{{ role() }}</h2>
+    <p class="lead">{{ intro() }}</p>
+    <p class="summary">{{ summary() }}</p>
+
+    <div class="hero__actions">
+      <a class="button primary" [href]="'mailto:' + data().profile.email">{{ t('hero.cta.contact') }}</a>
+      <a class="button" [href]="data().profile.linkedinUrl" target="_blank" rel="noreferrer">{{ t('hero.cta.linkedin') }}</a>
+    </div>
+  </div>
+
+  <div class="hero__photo">
+    <img [src]="data().profile.photoUrl" [alt]="data().profile.name" />
+  </div>
+</section>
+
+<section class="section" *ngIf="data().sectionVisibility.experience">
+  <div class="section__header">
+    <h3>{{ t('section.experience') }}</h3>
+  </div>
+
+  <div class="timeline">
+    @for (item of visibleExperience(); track item.id) {
+      <article class="card timeline__item">
+        <div class="timeline__meta">
+          <span>{{ item.company }}</span>
+          <span>{{ item.period }}</span>
+        </div>
+        <h4>{{ textByLocale(item.role) }}</h4>
+        <p>{{ textByLocale(item.summary) }}</p>
+      </article>
+    }
+  </div>
+</section>
+
+<section class="section" *ngIf="data().sectionVisibility.skills">
+  <div class="section__header">
+    <h3>{{ t('section.skills') }}</h3>
+  </div>
+
+  <div class="skills-grid">
+    @for (skill of visibleSkills(); track skill.name) {
+      <article class="card skill-card">
+        <strong>{{ skill.name }}</strong>
+        <span>{{ t('common.level') }} {{ skill.level }}/10</span>
+        <div class="skill-meter">
+          <div class="skill-meter__bar" [style.width.%]="skill.level * 10"></div>
+        </div>
+      </article>
+    }
+  </div>
+</section>
+
+
+<section class="section" *ngIf="data().sectionVisibility.education">
+  <div class="section__header">
+    <h3>{{ t('section.education') }}</h3>
+  </div>
+
+  <div class="timeline">
+    @for (item of visibleEducation(); track item.id) {
+      <article class="card timeline__item">
+        <div class="timeline__meta">
+          <span>{{ textByLocale(item.institution) }}</span>
+          <span>{{ item.year }}</span>
+        </div>
+        <h4>{{ textByLocale(item.title) }}</h4>
+      </article>
+    }
+  </div>
+</section>
+
+<section class="section" *ngIf="data().sectionVisibility.certifications">
+  <div class="section__header">
+    <h3>{{ t('section.certifications') }}</h3>
+  </div>
+
+  <div class="timeline">
+    @for (item of visibleCertifications(); track item.id) {
+      <article class="card timeline__item">
+        <div class="timeline__meta">
+          <span>{{ textByLocale(item.issuer) }}</span>
+          <span>{{ item.year }}</span>
+        </div>
+        <h4>{{ textByLocale(item.title) }}</h4>
+      </article>
+    }
+  </div>
+</section>
+
+<section class="section" *ngIf="data().sectionVisibility.portfolio">
+  <div class="section__header">
+    <h3>{{ t('section.portfolio') }}</h3>
+  </div>
+
+  <div class="portfolio-grid">
+    @for (project of visibleProjects(); track project.id) {
+      <article class="card project-card">
+        <h4>{{ textByLocale(project.title) }}</h4>
+        <p>{{ textByLocale(project.description) }}</p>
+        <div class="tags">
+          @for (item of project.stack; track item) {
+            <span>{{ item }}</span>
+          }
+        </div>
+      </article>
+    }
+  </div>
+</section>
+
+<section class="section" *ngIf="data().sectionVisibility.contact">
+  <article class="card contact-card">
+    <h3>{{ t('section.contact') }}</h3>
+    <p>{{ data().profile.email }}</p>
+    <p>
+      <a [href]="data().profile.linkedinUrl" target="_blank" rel="noreferrer">{{ data().profile.linkedinUrl }}</a>
+    </p>
+  </article>
+</section>
+
+<footer class="footer">
+  <p>{{ t('footer.note') }}</p>
+</footer>

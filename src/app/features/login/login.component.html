@@ -1,0 +1,24 @@
+<section class="login-wrapper">
+  <article class="card login-card">
+    <h1>{{ t('login.title') }}</h1>
+    <p>{{ t('login.subtitle') }}</p>
+
+    <label>
+      <span>{{ t('login.email') }}</span>
+      <input [(ngModel)]="email" type="email" />
+    </label>
+
+    <label>
+      <span>{{ t('login.password') }}</span>
+      <input [(ngModel)]="password" type="password" />
+    </label>
+
+    <button class="button primary" type="button" (click)="submit()">{{ t('login.submit') }}</button>
+
+    @if (error()) {
+      <p class="error">{{ error() }}</p>
+    }
+
+    <small>{{ t('login.hint') }}</small>
+  </article>
+</section>
