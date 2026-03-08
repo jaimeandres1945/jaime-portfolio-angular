@@ -1,0 +1,7 @@
+<svg width="800" height="1000" viewBox="0 0 800 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="1000" rx="42" fill="#0F172A"/>
+  <rect x="60" y="60" width="680" height="880" rx="28" fill="#111C33" stroke="#23314E"/>
+  <circle cx="400" cy="340" r="130" fill="#24324E"/>
+  <path d="M216 760C216 658.38 298.38 576 400 576C501.62 576 584 658.38 584 760V820H216V760Z" fill="#24324E"/>
+  <text x="400" y="905" fill="#8BB8FF" font-family="Arial, sans-serif" font-size="30" text-anchor="middle">Sustituye por tu foto profesional</text>
+</svg>

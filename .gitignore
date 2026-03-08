@@ -1,0 +1,10 @@
+/.angular
+/angular.json
+/node_modules
+/package-lock.json
+/package.json
+/public
+/README.md
+/src
+/tsconfig.app.json
+/tsconfig.json
