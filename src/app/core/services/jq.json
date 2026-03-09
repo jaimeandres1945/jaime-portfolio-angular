@@ -1,0 +1,324 @@
+{
+  "basics": {
+    "name": "Jaime Andrés Quiceno González",
+    "label": "Software Architect · Tech Lead · DevOps",
+    "image": "",
+    "email": "contacto@jaimequiceno.es",
+    "phone": "+34 656 829 726",
+    "url": "https://jaimequiceno.es",
+    "summary": "Software Architect with 15+ years of experience building products, automations and scalable platforms for companies such as Knowmad Mood, Conversia, Sportium, Wolters Kluwer, Green Power Monitor and Vueling. Focused on .NET, Angular, Azure, AWS and DevOps for enterprise environments.",
+    "location": {
+      "city": "Barcelona",
+      "countryCode": "ES",
+      "region": "Catalonia"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "jaqg-dev",
+        "url": "https://www.linkedin.com/in/jaqg-dev"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Knowmad Mood",
+      "position": "Software Architect .NET",
+      "location": "Barcelona, Spain",
+      "url": "",
+      "startDate": "2025-06",
+      "endDate": "",
+      "summary": "Requirements analysis, architecture design and framework evolution for the corporate architecture team.",
+      "highlights": [
+        "Requirements analysis and architecture design",
+        "Framework evolution for the architecture team",
+        "Implementation of new capabilities for enterprise software environments"
+      ]
+    },
+    {
+      "name": "Conversia",
+      "position": "Software Architect and Tech Lead .NET/Angular",
+      "location": "Barcelona, Spain",
+      "url": "",
+      "startDate": "2023-06",
+      "endDate": "2024-05",
+      "summary": "Architecture design, Azure CI/CD, SonarQube, Checkmarx, Terraform, Ansible, Docker, AWS and cross-company technical enablement.",
+      "highlights": [
+        "Designed architecture for enterprise applications",
+        "Implemented CI/CD with Azure DevOps",
+        "Worked with SonarQube, Checkmarx, Terraform, Ansible and Docker",
+        "Provided technical enablement across teams"
+      ]
+    },
+    {
+      "name": "Sportium / Capitole Consulting",
+      "position": "FullStack .NET and Angular Developer",
+      "location": "Barcelona, Spain",
+      "url": "",
+      "startDate": "2022-04",
+      "endDate": "2023-05",
+      "summary": "Feature delivery and architecture support for an online betting platform using microservices, Kafka and WebSockets.",
+      "highlights": [
+        "Developed new platform features",
+        "Supported software architecture decisions",
+        "Worked with microservices, Kafka and WebSockets",
+        "Used .NET, Angular and DevOps practices in a high-demand online platform"
+      ]
+    },
+    {
+      "name": "Vueling Airlines",
+      "position": ".NET Software Analyst Developer",
+      "location": "Barcelona, Spain",
+      "url": "",
+      "startDate": "2020-06",
+      "endDate": "2022-02",
+      "summary": "Worked in Agile teams delivering features with .NET, AWS, Azure Cloud CI, Docker, Blazor and engineering best practices.",
+      "highlights": [
+        "Built new functionality in Agile teams",
+        "Worked with AWS, Azure Cloud CI and Docker",
+        "Used Blazor and .NET in enterprise airline systems",
+        "Applied software engineering best practices"
+      ]
+    },
+    {
+      "name": "Industrias Electromecánicas Magnetron",
+      "position": ".NET Software Analyst Developer",
+      "location": "Colombia",
+      "url": "",
+      "startDate": "2015-10",
+      "endDate": "2019-02",
+      "summary": "Automation of production processes through barcodes, achieving few steps to process information.",
+      "highlights": [
+        "Automated industrial production processes",
+        "Improved information processing with barcode workflows",
+        "Delivered .NET solutions in a manufacturing environment"
+      ]
+    },
+    {
+      "name": "Corporación de Estudios Tecnológicos del Norte del Valle (Cotecnova)",
+      "position": "Web Training Instructor",
+      "location": "Colombia",
+      "url": "",
+      "startDate": "2016-01",
+      "endDate": "2017-12",
+      "summary": "Taught various subjects including Data Structures II and Graphical User Interface Development.",
+      "highlights": [
+        "Taught software development subjects",
+        "Delivered classes on Data Structures II",
+        "Delivered classes on GUI development"
+      ]
+    },
+    {
+      "name": "Sutex Internacional",
+      "position": ".NET and Web Analyst Developer",
+      "location": "Colombia",
+      "url": "",
+      "startDate": "2015-02",
+      "endDate": "2015-10",
+      "summary": "Worked with EPICOR ERP 9.0, enabling direct interface modifications through C# and Visual Basic 6.0.",
+      "highlights": [
+        "Worked with EPICOR ERP 9.0",
+        "Implemented business automation processes",
+        "Used C# and Visual Basic 6.0 in enterprise software customization"
+      ]
+    },
+    {
+      "name": "Oceanic Casa de Software",
+      "position": ".NET and Web Analyst Developer",
+      "location": "Colombia",
+      "url": "",
+      "startDate": "2014-03",
+      "endDate": "2015-02",
+      "summary": "Implemented software quality and document management standards with CMMI, improving software development practices and estimation accuracy.",
+      "highlights": [
+        "Worked on CMMI quality standards implementation",
+        "Improved software development practices",
+        "Helped achieve more accurate effort estimation"
+      ]
+    },
+    {
+      "name": "Indra Software Labs",
+      "position": "Java Software Development Engineer",
+      "location": "Colombia",
+      "url": "",
+      "startDate": "2013-09",
+      "endDate": "2014-03",
+      "summary": "Analysis, design and development of new features in a geolocation system for a petroleum transportation company using Java, Spring, Hibernate and Oracle.",
+      "highlights": [
+        "Designed and developed new features in Java",
+        "Worked with Spring, Hibernate and Oracle",
+        "Built geolocation solutions for an industrial transport use case"
+      ]
+    },
+    {
+      "name": "Apolo Casa de Software",
+      "position": "Technical Support Agent",
+      "location": "Colombia",
+      "url": "",
+      "startDate": "2011-09",
+      "endDate": "2013-08",
+      "summary": "Provided client support, database query assistance, reporting, software configuration and end-user training.",
+      "highlights": [
+        "Provided technical support to clients",
+        "Worked with database queries and reporting",
+        "Configured accounting-related software flows",
+        "Trained customers on software usage"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Universidad Internacional de la Rioja (UNIR)",
+      "url": "",
+      "area": "Development and Operations (DevOps)",
+      "studyType": "Master",
+      "startDate": "2024-01",
+      "endDate": "2025",
+      "score": "",
+      "courses": []
+    },
+    {
+      "institution": "Universidad Católica de Pereira",
+      "url": "",
+      "area": "Systems and Telecommunications",
+      "studyType": "Engineering Degree",
+      "startDate": "",
+      "endDate": "2016",
+      "score": "",
+      "courses": []
+    },
+    {
+      "institution": "Corporación de Estudios Tecnológicos del Norte del Valle (Cotecnova)",
+      "url": "",
+      "area": "Enterprise Information Technology",
+      "studyType": "Technologist Degree",
+      "startDate": "",
+      "endDate": "2014",
+      "score": "",
+      "courses": []
+    },
+    {
+      "institution": "Servicio Nacional de Aprendizaje",
+      "url": "",
+      "area": "Construction",
+      "studyType": "Professional Technician",
+      "startDate": "",
+      "endDate": "2005",
+      "score": "",
+      "courses": []
+    },
+    {
+      "institution": "System Plus",
+      "url": "",
+      "area": "Integrated Systems Management",
+      "studyType": "Technician",
+      "startDate": "",
+      "endDate": "2004",
+      "score": "",
+      "courses": []
+    }
+  ],
+  "certificates": [
+    {
+      "name": "SAFe Agile Practitioner",
+      "date": "2025",
+      "issuer": "Scaled Agile",
+      "url": ""
+    },
+    {
+      "name": "Microsoft Certified: Azure Fundamentals (AZ-900)",
+      "date": "2025",
+      "issuer": "Microsoft",
+      "url": ""
+    },
+    {
+      "name": "Documentation, Principles and Practices of Software Architecture",
+      "date": "2015",
+      "issuer": "Pereira Technology University - Colombia",
+      "url": ""
+    }
+  ],
+  "skills": [
+    {
+      "name": "C# / .NET",
+      "level": "Expert",
+      "keywords": []
+    },
+    {
+      "name": "Angular / TypeScript",
+      "level": "Advanced",
+      "keywords": []
+    },
+    {
+      "name": "Azure DevOps",
+      "level": "Advanced",
+      "keywords": []
+    },
+    {
+      "name": "AWS",
+      "level": "Intermediate",
+      "keywords": []
+    },
+    {
+      "name": "Github Enterprise",
+      "level": "Advanced",
+      "keywords": []
+    },
+    {
+      "name": "Microservices / DDD",
+      "level": "Expert",
+      "keywords": []
+    },
+    {
+      "name": "SOLID Principles / Design Patterns",
+      "level": "Advanced",
+      "keywords": []
+    },
+    {
+      "name": "CI/CD / Terraform / Docker",
+      "level": "Expert",
+      "keywords": []
+    }
+  ],
+  "languages": [
+    {
+      "language": "Spanish",
+      "fluency": "Native"
+    },
+    {
+      "language": "English",
+      "fluency": "Professional working proficiency"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Personal Multilingual Portfolio",
+      "description": "Personal brand landing page with configurable public sections, SEO and a narrative focused on permanent hiring.",
+      "highlights": [
+        "Built with Angular standalone components and signals",
+        "Responsive UI",
+        "SEO-ready setup",
+        "Cloudflare Pages deployment"
+      ],
+      "keywords": ["Angular", "Signals", "Responsive UI", "SEO", "Cloudflare Pages"],
+      "startDate": "",
+      "endDate": "",
+      "url": "https://jaimequiceno.es",
+      "roles": ["Software Architect", "Frontend Developer"]
+    },
+    {
+      "name": "Portfolio Backoffice",
+      "description": "Internal panel to toggle experience, skills and projects without touching code.",
+      "highlights": [
+        "Admin area for content management",
+        "Visibility toggles for sections",
+        "localStorage-driven CMS behavior"
+      ],
+      "keywords": ["Angular Router", "Guards", "localStorage CMS"],
+      "startDate": "",
+      "endDate": "",
+      "url": "",
+      "roles": ["Software Architect", "Frontend Developer"]
+    }
+  ]
+}

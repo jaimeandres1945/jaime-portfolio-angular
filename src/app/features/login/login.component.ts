@@ -16,8 +16,8 @@ export class LoginComponent {
   private readonly router = inject(Router);
   private readonly i18n = inject(I18nService);
 
-  protected email = 'admin@jaimequiceno.es';
-  protected password = 'Admin2026!';
+  protected email = '';
+  protected password = '';
   protected error = signal('');
 
   protected t(key: string): string {
